@@ -1,0 +1,28 @@
+{% extends 'index.html' %}
+
+{% block titulo %}
+  Informações
+{% endblock %}
+
+{% block conteudo %}
+
+  <main>
+    <section class="container">
+      <div class="mt-3">
+        <h1> Mais sobre nós: </h1>
+        <p class="lead"> O projeto Asylum pretende desenvolver um auxílio tecnológico para os idosos em asilos. O suporte que nós apresentamos é filantrópico, isto é, depende da ajuda de voluntários aos asilos cadastrados. Os voluntários poderão agendar um horário para doar o seu tempo na visita aos idosos e dar atenção e carinho que eles tanto anseiam, bem como desenvolver atividades de lazer com eles. Além disso, há um espaço para fazer doações de quaisquer quantias para o asilo que quiserem e ajudá-los através dessa ação. Profissionais da saúde poderão também agendar um horário para prestar seu serviço voluntariamente, assim como algumas instituições, como as artísticas, que queiram marcar um horário para se apresentar e entretê-los. Desse modo, o Asylum espera ajudar socialmente e  melhorar a qualidade de vida dessas pessoas que tanto necessitam e merecem esses cuidados.
+        </p>
+
+        <h4 class="a"> Alguns de nossos asilos cadastrados:
+        </h4>
+
+        <ul class="list-group list-group-flush">
+		      {% for c in asilos %}
+			      <li class="list-group-item">  {{ c.nome }} </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </section>
+  </main>
+
+{% endblock %}

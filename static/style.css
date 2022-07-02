@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
+/*Estilos gerais*/
+html{
+  font-family: "Montserrat", os-system;
+}
+
+
+
+.container{
+  margin-bottom: 2rem;
+}
+
+.form-control{
+  border-left: none !important;
+  border-right: none !important;
+  border-top: none !important;
+  border-radius: 0 !important;
+}
+
+.btn-asylum{
+  background-color: #41C2A6;
+  color: whitesmoke;
+}
+
+footer{
+  background-color: #41C2A6;
+  height: 4rem;
+}
+/* Estilos página inicial*/
+
+.home-title{
+  font-size: 6rem;
+  font-weight: 700; 
+}
+.logo{
+  width: 40px;
+  height: 40px;
+  background-color: #41C2A6;
+}
+
+.top-header{
+  width: 100%;
+  margin-right: 6rem !important;
+  -webkit-box-shadow: 0px 9px 15px -4px rgba(0,0,0,0.2); 
+  box-shadow: 0px 9px 15px -4px rgba(0,0,0,0.2);
+}
+
+.nav-link{
+  color: #0c0c0c !important;
+  text-decoration: none !important;
+}
+
+.nav-link:hover{
+  color: #41C2A6 !important;
+}
+
+.cad{
+  border: 2px solid #41C2A6 !important;
+  border-radius: 10px;
+}
+
+.btn-cad{
+  width: 20rem;
+  height: 4rem;
+  background-color: #41C2A6 !important;
+  color: whitesmoke;
+  font-weight: 700;
+}
+
+.cad:hover{
+  transition: .5 ease-in-out;
+  background-color: #41C2A6;
+  color: whitesmoke !important;
+}
+
+/*Home estilos*/
+.main-home{
+  background-image: url("img/home-image.png");
+}
+
+.home{
+  margin: 0 !important;
+}

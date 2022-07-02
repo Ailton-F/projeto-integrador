@@ -1,0 +1,45 @@
+{% extends 'index.html' %}
+
+{% block titulo %}
+  Cadastro Instituição
+{% endblock %}
+
+{% block conteudo %}
+
+<main>
+  <section class="container d-flex justify-content-center align-items-center">
+    <div class="card w-50 mt-5">
+    
+      <div class="card-header d-flex justify-content-center">
+        <h1 class="display-2">Cadastro Instituição</h1>  
+      </div>
+      
+      <div class="card-body">
+        <form class="form">
+          <div class="mb-3">
+            <input class="form-control" type="text" placeholder="Nome" id="name">
+          </div>
+          <div class="mb-3">
+            <input class="form-control" type="text" placeholder="Email" id="email">
+          </div>
+          <div class="mb-3">
+            <input class="form-control" type="text" placeholder="CNPJ" id="CNPJ">
+          </div>
+          <div class="mb-3">
+            <input class="form-control" name="ambito" id="ambito" placeholder="Área de atuação"></input>
+          </div>
+          <div class="mb-3">
+            <input class="form-control" type="password" placeholder="Senha" id="password">
+          </div>
+          <div class="mb-3">
+            <input class="form-control" type="password" placeholder="Confirme sua senha" id="password-confirm">
+          </div>
+          <button type="submit" class="btn btn-asylum">Cadastrar</button>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+  
+
+{% endblock %}

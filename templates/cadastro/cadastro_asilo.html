@@ -1,0 +1,39 @@
+{% extends 'index.html' %}
+
+{% block titulo %}
+  Página Inicial
+{% endblock %}
+
+{% block conteudo %}
+  <main>
+    <section class="container text-center d-flex justify-content-center align-items-center">
+     <div class="card w-50 mt-5">
+        <div class="card-header d-flex justify-content-center">
+          <h1 class="display-2">Cadastro Asilo</h1>  
+        </div>
+          
+        <div class="card-body">
+          <form class="form">
+            <div class="mb-3">
+              <input class="form-control" type="text" placeholder="Nome" id="nome">
+            </div>
+            <div class="mb-3">
+              <input class="form-control" type="text" placeholder="CNPJ" id="CNPJ">
+            </div>
+            <div class="mb-3">
+              <input class="form-control" type="text" placeholder="Localização">
+            </div>
+            <div class="mb-3">
+              <input class="form-control" type="password" placeholder="Senha" id="password">
+            </div>
+            <div class="mb-3">
+              <input class="form-control" type="password" placeholder="Confirme sua senha" id="password-confirm">
+            </div>
+            <button type="submit" class="btn btn-asylum">Cadastrar</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+ 
+{% endblock %}
